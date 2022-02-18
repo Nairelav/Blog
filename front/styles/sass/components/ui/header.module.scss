@@ -1,0 +1,57 @@
+@import "../../abstracts/import";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $color-white;
+  color: $color-black-2;
+  height: 6rem;
+  padding: 0 3rem;
+  box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 0.1);
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    height: auto;
+  }
+
+  & a {
+    color: $color-black-2;
+    margin-right: 2rem;
+
+    @include respond(tab-port) {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: $color-black;
+    }
+  }
+
+  & ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+
+    @include respond(tab-port) {
+      margin: 2rem 0;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__logo {
+    color: $color-red;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+
+    @include respond(tab-port) {
+      margin: 2rem 0;
+    }
+
+    & a {
+      color: $color-red;
+    }
+  }
+}

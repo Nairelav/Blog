@@ -1,0 +1,108 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
+
+::selection {
+  background-color: #ebebeb;
+  color: #fff; }
+
+@-webkit-keyframes rubberBand {
+  0% {
+    transform: scale3d(1, 1, 1); }
+  35% {
+    transform: scale3d(1.25, 0.75, 1); }
+  45% {
+    transform: scale3d(0.75, 1, 1); }
+  65% {
+    transform: scale3d(1.2, 0.8, 1); }
+  75% {
+    transform: scale3d(1.05, 0.95, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@keyframes rubberBand {
+  0% {
+    transform: scale3d(1, 1, 1); }
+  35% {
+    transform: scale3d(1.25, 0.75, 1); }
+  45% {
+    transform: scale3d(0.75, 1, 1); }
+  65% {
+    transform: scale3d(1.2, 0.8, 1); }
+  75% {
+    transform: scale3d(1.05, 0.95, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+body {
+  font-family: Radikal;
+  font-weight: 400; }
+
+h1 {
+  color: #504d4d;
+  margin: 0;
+  font-weight: 400;
+  font-size: 10.3rem;
+  line-height: 8.7rem;
+  position: relative; }
+
+h2 {
+  color: #504d4d;
+  font-weight: 400;
+  margin-top: 0;
+  position: relative;
+  margin-bottom: 4rem;
+  left: -1rem;
+  font-size: 7.3rem;
+  line-height: 6.7rem; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 3rem !important; } }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-bottom-big {
+      margin-bottom: 5rem !important; } }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+
+.full-section {
+  height: 95vh;
+  padding: 9rem 3rem;
+  display: flex;
+  align-items: center; }
