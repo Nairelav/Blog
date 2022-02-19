@@ -1,8 +1,15 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
+
 import classes from "@styles/components/ui/layout.module.scss";
-import Header from "@components/Header";
+
+import Header from "@components/ui/Header";
+import Footer from "@components/ui/Footer";
+import Hero from "@components/Hero";
 
 const index = ({ title, keywords, description, children }) => {
+  const router = useRouter();
+
   return (
     <div>
       <Head>
@@ -11,7 +18,9 @@ const index = ({ title, keywords, description, children }) => {
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       <Header />
+      {router.pathname === "/" && <Hero />}
       <div className={classes.container}>{children}</div>
+      <Footer />
     </div>
   );
 };
